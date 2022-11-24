@@ -1,0 +1,114 @@
+
+
+<!-- 
+<mat-toolbar color="primary">
+    <span><img src="./assets/img/logo2.jpg" alt="" width="100" height="100"></span>
+     <a mat-button class="navbar-a">Home</a>
+     <a mat-button class="navbar-a">About</a>
+     <a mat-button class="navbar-a">Contact</a>
+</mat-toolbar>
+ -->
+
+
+ <mat-toolbar class="navbar">
+    <!-- <div id="logo"><img src="./assets/img/logo2.jpg" alt="" width="90" height="70"></div> -->
+    <div id="appname">RAIL<span class="span-yatri">YATRI</span>
+    </div>
+     <div>
+     <a  routerlink="/home">Home</a>
+    
+     <a  routerLink="/trains">Schedule</a>
+
+     <a  roterLink="/userLogin">User</a>
+     <a  routeLink="/userLogin">Admin</a>
+     <a routerLink="/about">About Us</a>
+     <a routerLink="/contact">Contact</a>
+     
+
+    </div> 
+  </mat-toolbar>
+
+<br><br>
+  <section id="home">
+    <div class="container">
+       
+        <h1 class="container-h1"> The journey has its own lyrics.... </h1>
+        
+       
+    </div>
+  </section>
+
+
+
+<!-- FOOTER SATRTS HERE  -->
+<footer class="mt-5 py-5">
+     
+    <div class="row container mx-auto">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+        <img src="./assets/img/Logo1.jpg" alt="" width="200" height="150">
+        <p class="pt-3">"This is the Portal of Indian Railways, developed with an objective 
+            to enable a single window access to information and services being provided by the 
+            various Indian Railways entities. The content in this Portal is the result of a collaborative 
+            effort of various Indian Railways Entities and Departments Maintained by CRIS, Ministry of Railways, 
+            Government of India."</p>
+    </div>
+
+    <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+    <h5 class="pb-2">Featured</h5>
+    <ul class="text-uppercase list-unstyled">
+        <li><a href="#">Admin Login</a></li>
+        <li><a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,277">Site Map</a></li>
+        <li><a href="http://rti.railnet.gov.in/">RTI</a></li>
+        <li> <a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,286">Disclaimer</a></li>
+        <li><a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,332">Terms & Conditions</a></li>
+        <li> <a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,333">Privacy Policy</a></li>
+    
+       
+    </ul>
+  </div>
+
+  <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+    <h5 class="pb-2">Contact Us</h5>
+    <div>
+        <h6 class="text-uppercase">Address</h6>
+        <p>123 STEET NAME , CITY , INDIA</p>
+    </div>
+    <div>
+        <h6 class="text-uppercase">phone</h6>
+        <p>(123) 456-7890</p>
+    </div>
+    <div>
+        <h6 class="text-uppercase">email</h6>
+        <p>indianrailways@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-one col-lg-3 col-md-6 col-12">
+    <h5 class="pb-2"></h5>
+    <div class="row">
+        <img  class="img-fluid w-200 h-200 m-2" src="./assets/img/ft.jpg" alt="">
+       
+    </div>
+  </div>
+</div>
+
+<div class="copyright mt-5">
+    <div class="row container mx-auto">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <img src="./assets/img/payment.png" alt="">
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+            <p>Indian Railways @2020, All Rights Reserved</p>
+        </div>
+
+      
+    </div>
+
+</div>
+
+</footer> 
+
+
+<router-outlet></router-outlet>
+
