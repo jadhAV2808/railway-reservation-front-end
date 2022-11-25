@@ -4,6 +4,7 @@ mat-toolbar{
     /* background-color: rgb(187, 221, 33); */
     background: linear-gradient(90deg , #65b895 0%, rgb(58, 209, 76));
     position: fixed !important;
+    
 }
 
 .navar{

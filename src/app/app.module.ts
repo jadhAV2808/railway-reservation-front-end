@@ -8,15 +8,17 @@ import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { TrainsListComponent } from './component/trains-list/trains-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserLoginComponent } from './component/user-login/user-login.component';
+import { AdminDashboardComponent } from './component/admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     routingComponents,
-    UserLoginComponent
+    UserLoginComponent,
+    AdminDashboardComponent
 
     // TrainsListComponent
   ],
@@ -26,7 +28,8 @@ import { UserLoginComponent } from './component/user-login/user-login.component'
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
