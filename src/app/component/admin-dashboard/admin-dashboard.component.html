@@ -72,7 +72,7 @@
                     <td>{{train.seats}}</td>
                     <td>{{train.time}}</td>
                     <td>
-                      <button > DELETE</button> &nbsp;
+                      <button  (click)="deleteTrain(train)"> DELETE</button> &nbsp;
                        <!-- <button>UPDATE</button> -->
                        <button (click)="onEditTrain(train)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Edit 

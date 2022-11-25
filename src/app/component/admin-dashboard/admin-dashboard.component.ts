@@ -112,23 +112,22 @@ export class AdminDashboardComponent implements OnInit {
   }
 
 
-  /*Delete the trains by id *
-  deleteTrain(train:any){
-    this.trainsListServcie.deleteTrain(train.trainId)
+  /*Delete the trains by id */
+  deleteTrain(train){
+    this.trainsListServcie.deleteTrainById(train.trainId)
     .subscribe(res=>{
-      console.log(train);
-      alert("Train Deleted Successfully!");
+      console.log(res);
+      alert("Train Deleted Successfully!")
       this.getTrainsList();
-    },
-    error=>{
-      alert("Something went Wrong!!!");
-    }
-    );
+    })
+    
+    
+   
    
       // alert("Train Deleted Successfully!");
       // this.getTrainsList();
    
-  }*/
+  }
 
 
   /*Delete the trains by id *
@@ -142,8 +141,8 @@ export class AdminDashboardComponent implements OnInit {
         console.log(error);
       }
     );
-  } */
-
+  } 
+*/
   onEditTrain(train:any){
 
     this.showAdd=false;

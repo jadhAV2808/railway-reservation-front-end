@@ -43,14 +43,14 @@ export class TrainsListService {
   }
 
 
-  /* delete train by id 
+  /* delete train by id */
   public deleteTrainById(id:number){
-    this.http.delete<any>(this.api+'/trains/deleteTrain?id='+id)
+    return this.http.delete<any>(this.api+'/trains/deleteTrain/'+id)
     .pipe(map((res:any)=>{
       return res;
     }))
   }
-*/
+
 
   /*delete train by id  */
   public deleteTrain(id){
